@@ -1,0 +1,16 @@
+programa
+{
+	funcao inicio()
+	{
+		cadeia myName, myStr
+		cadeia resultado
+		
+		escreva("Digite name: ")
+		leia(myName)
+
+		escreva("Digite str:")
+		leia(myStr)
+
+		escreva ("My name is " + myName + ", and I am well")
+	}
+}
