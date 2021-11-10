@@ -1,104 +1,169 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <title>BIKE ESPORTE</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/efda80027a.js"
+      crossorigin="anonymous"
+    ></script>
+    
+  </head>
 
-<head>
-  <title>R-BIKES</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=3.0s">
-  <link rel="stylesheet" href="productlanding.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@500&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@100&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@900&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital@1&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-  <script src="https://kit.fontawesome.com/efda80027a.js" crossorigin="anonymous"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="productscript.js"></script>
-
-</head>
-
-<body>
-<!-- START HEADER -->
-  <header id="header">
-    <div class="container-fluid">
-      <h1 class="text-primary text-center"><span>R</span>-BIKES</h1>
-      <p class="text-primary text-center">Sua Loja de Bicicletas</p>
-      <a href="#">
-        <img class="img-responsive" src="https://cdn.statically.io/gh/Ro3son/product-landing-page/main/AdobeStockBicycle.jpeg" alt="bicycle-photo.jpeg">
-      </a>
-      <form id="form">
-        <div class="row">
-          <div class="col-md-7">
-            <div class="well">
-              <input class="form-control" type="text" placeholder="Buscar o produto...">
-            </div>
-          </div>
-          <div class="col-md-5">
-            <div id="btn-well" class="well">
-              <button class="btn btn-primary" type="submit"><i class="fas fa-search"></i> Buscar</button>
+  <body>
+    
+    <header class="header">
+      <div class="container">
+        <h1><a href="#!">BICICLETARIA ESPORTE</a></h1>
+        <div class="icons">
+          <i class="fas fa-user-circle">
+            <span class="user-circle"> Entre</span>
+          </i>
+          <i class="fas fa-shopping-cart"
+            ><span class="shopping-cart"> Carrinho</span>
+          </i>
+        </div>
+      </div>
+    </header>
+    <div class="search">
+      <form class="form">
+        <input
+          class="input-form"
+          type="search"
+          placeholder="Faça aqui uma busca :)"
+        />
+        <button class="button" type="submit" title="Buscar">
+          <i class="fas fa-search"></i>
+        </button>
+      </form>
+    </div>
+    
+    <nav class="nav">
+      <div class="nav-bar">
+        <div class="dropdown">
+          <button class="dropbtn"><i class="fas fa-bicycle"></i></button>
+          <div class="dropdown-content">
+            <div class="row">
+              <div class="column">
+                <h2><strong>Bicicletas</strong></h2>
+                <a href="#bikemtb">Bike MTB</a>
+                <a href="#bikepeed">Bike Speed</a>
+                <a href="#bikeinfantil">Bike Infantil</a>
+              </div>
             </div>
           </div>
         </div>
-      </form>
-      <div class="row">
-        <i class="fas fa-shopping-cart"> Minhas Compras</i>
+        <div class="dropdown">
+          <button class="dropbtn"><i class="fas fa-cogs"></i></button>
+          <div class="dropdown-content">
+            <div class="row">
+              <div class="column">
+                <h2><strong>Componentes</strong></h2>
+                <a href="#rodamtb">Rodas de MTB</a>
+                <a href="#rodaspeed">Rodas de Speed</a>
+                <a href="#camarasdear">Câmaras de ar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn"><i class="fas fa-tshirt"></i></button>
+          <div class="dropdown-content">
+            <div class="row">
+              <div class="column">
+                <h2><strong>Roupas</strong></h2>
+                <a href="#bermudas">Bermudas</a>
+                <a href="#camisasmangalonga">Camisas Manga Longa</a>
+                <a href="#camisasmangalonga">Camisas Manga Curta</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <!-- START NAV -->
-      <div class="row">
-        <nav id="nav-bar">
-          <ul class="list">
-            <li class="item">Roupas</li>
-            <li class="item">Peças</li>
-            <li class="item">Bicicletas</li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </header>
-  <!-- START PRODUCTS MAIN -->
-  <main class="main">
-    <h2>Produtos em Oferta Para Todo o Brasil</h2>
-    <div class="products">
-      <div class="MTB">
-        <h3>MTB</h3>
-        <p>$3.600,00</p>
-        <button class="btn">Comprar</button>
-      </div>
-      <div class="urban">
-        <h3>URBAN</h3>
-        <p>$1.600,00</p>
-        <button class="btn">Comprar</button>
-      </div>
-      <div class="speed">
-        <h3>$3.200,00</h3>
-        <p>Speed</p>
-        <button class="btn">Comprar</button>
-      </div>
-    </div>
-    <div class="container">
+    </nav>
+    
+    <div class="icon-truck">
+      <h2 title="Confira aqui!">Frete Grátis</h2>
       <i class="fas fa-truck"></i>
-      <h2>Frete Grátis</h2>
     </div>
+    <main class="main">
+      <div class="container">
+        <div class="flex-container">
+          <div class="mySlides">
+            <img
+              class="demo cursor"
+              src="img/bmx-june172020-min.jpg"
+              alt="Mtb"
+            />
+            <h3>BMX</h3>
+            <p>$0.000,00</p>
+            <button class="btn">Comprar</button>
+          </div>
+          <div class="mySlides">
+            <img
+              class="demo cursor"
+              src="img/cruiser-june172020-min.jpg"
+              alt="Urban"
+            />
+            <h3>Cruiser</h3>
+            <p>$0.000,00</p>
+            <button class="btn">Comprar</button>
+          </div>
+          <div class="mySlides">
+            <img
+              class="demo cursor"
+              src="img/folding-bike.jpg"
+              alt="Speed"
+            />
+            <h3>Folding</h3>
+            <p>$0.000,00</p>
+            <button class="btn">Comprar</button>
+          </div>
+          <div class="mySlides">
+            <img
+              class="demo cursor"
+              src="img/mtb.jpg"
+              alt="MTB"
+            />
+            <h3>MTB</h3>
+            <p>$0.000,00</p>
+            <button class="btn">Comprar</button>
+          </div>
+          <div class="mySlides">
+            <img
+              class="demo cursor"
+              src="img/roadbike.jpg"
+              alt="URBAN"
+            />
+            <h3>Road</h3>
+            <p>$0.000,00</p>
+            <button class="btn">Comprar</button>
+          </div>
+          <div class="mySlides">
+            <img
+              class="demo cursor"
+              src="img/track-bike.jpg"
+              alt="SPEED"
+            />
+            <h3>Track</h3>
+            <p>$0.000,00</p>
+            <button class="btn">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    
     <div class="contact">
-      <h3>Contato</h3>
+      <h4>Contato</h4>
       <i class="fab fa-telegram"></i>
       <i class="fab fa-reddit"></i>
     </div>
-  </main>
-  <!-- START FOOTER -->
-  <footer class="footer">
-    <p>Esta página é só um projeto</p>
-  </footer>
-
-</body>
-
+  
+    <footer class="footer">
+      <p>Esta página é só um projeto</p>
+      <p>Nenhum direito reservado</p>
+    </footer>
+  </body>
 </html>
