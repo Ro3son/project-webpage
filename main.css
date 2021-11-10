@@ -183,7 +183,7 @@ nav .nav-bar .row a:hover {
   width: 100%;
 }
 
-.flex-container .product {
+.flex-container .mySlides {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -194,29 +194,29 @@ nav .nav-bar .row a:hover {
   font-size: 1em;
 }
 
-.flex-container .product img {
+.flex-container .mySlides img {
   font-size: 1em;
   width: 25%;
   margin: 1em 0 1em 0;
 }
 
-.flex-container .product h3 {
+.flex-container .mySlides h3 {
   font-size: 2em;
 }
 
-.flex-container .product p {
+.flex-container .mySlides p {
   font-size: 1.2em;
   padding: 1em 0 1em 0;
 }
 
-.flex-container .product .btn {
+.flex-container .mySlides .btn {
   width: 30%;
   border: 2px solid #000;
   font-size: 1em;
   margin-bottom: 1em;
 }
 
-.flex-container .product .btn:hover {
+.flex-container .mySlides .btn:hover {
   background-color: tomato;
 }
 
