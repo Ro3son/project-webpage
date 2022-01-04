@@ -5,36 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-widht, initial-sclae=1.0" />
     <title>Entre ou cadastre-se</title>
+    <link rel="stylesheet" href="SCSS/main.css" />
     <script
       src="https://kit.fontawesome.com/efda80027a.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <div class="sign-layout-main-content">
-      <main>
-        <div class="loginmain">
-          <h1>Entre ou <a href="#">cadastre-se</a></h1>
-        </div>
-        <form action="/action_page.php">
-          <div class="inputform-label">
-            <label for="username" class="inputform-container"
-              >E-mail ou nome de usuário</label
-            ><br />
-            <input id="username" type="text" />
-          </div>
-          <br />
-          <div class="inputform-label">
-            <label for="password" class="inputform-field-container">Senha</label
-            ><br />
-            <input type="password" name="senha" id="password" />
-          </div>
-          <br />
-          <div class="btn button">
-            <button id="btn-button" type="submit"><span>Avançar</span></button>
-          </div>
-        </form>
-      </main>
+    <div class="sign-main-content">
+      <div class="loginmain">
+        <h1>Entre ou <a href="#">cadastre-se</a></h1>
+      </div>
+      <form class="loginform">
+        <div class="inputform-label">
+          <label for="username" class="form-label">E-mail ou nome de usuário</label><br />
+          <input type="text" class="form-control" />
+        </div><br />
+        <div class="inputform-label">
+          <label for="password" class="form-label">Senha</label><br />
+          <input type="password" class="form-control" />
+        </div><br />
+      </form>
+      <div class="btn-button">
+        <button type="submit" class="btn">Avançar</button>
+      </div>
     </div>
   </body>
 </html>
