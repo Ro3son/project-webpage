@@ -13,7 +13,7 @@ header .container {
           flex-direction: row;
   height: 100%;
   padding: 2em 1em 2em 1em;
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid #0e1318;
 }
 
 header .container h1 {
@@ -399,32 +399,103 @@ nav .nav-bar .row a:hover {
   }
 }
 
-.sign-layout-main-content {
+.sign-main-content {
   display: block;
   max-width: 30rem;
   width: 100%;
+  height: 90%;
   margin: 2em auto 1em auto;
-  padding: 1.71em 2em 0.5em;
+  padding: 1.71em 2em 0.5em 2em;
   color: #8ae1b0;
   background-color: #2a2d2f;
+  -webkit-transition: max-width 0.15s ease-in;
+  transition: max-width 0.15s ease-in;
+  border-radius: 4px;
 }
 
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+.sign-main-content .loginmain {
+  text-align: center;
+  line-height: 0.8;
+  padding: 0px 3.4em 0px 3.4em;
+  margin: 1.5em 0px 1.5em 0px;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  color: #d9eee1;
+}
+
+.sign-main-content .loginmain h1 {
+  font-size: 2em;
+  padding-bottom: 1em;
+}
+
+.sign-main-content .loginmain h1 a {
+  text-decoration: underline;
+  list-style-type: none;
+  color: #d9eee1;
+}
+
+.sign-main-content form {
   margin: 0;
   padding: 0;
 }
 
-body {
-  height: 100vh;
-  line-height: 1.1;
+.sign-main-content label {
+  font-size: 1.5em;
 }
 
-h1,
-h2,
-h3 {
-  font-weight: 400;
+.sign-main-content .inputform-label {
+  padding-bottom: 1em;
+  padding-right: 2.89em;
+  font-weight: 300;
+}
+
+.sign-main-content input {
+  font-size: 1em;
+  border-radius: 3px;
+  border: 1px solid whitesmoke;
+  background: transparent;
+  color: whitesmoke;
+  outline: none;
+}
+
+.sign-main-content input[type="text"] {
+  height: 3em;
+  width: 110%;
+  padding: 0.42em 1.14em 0.42em 1.14em;
+  border-radius: 3px;
+}
+
+.sign-main-content input[type="password"] {
+  height: 3em;
+  width: 110%;
+  padding: 0.42em 1.14em 0.42em 1.14em;
+  border-radius: 3px;
+}
+
+.sign-main-content .btn-button > button {
+  font-family: monospace;
+  margin-top: 1.75em;
+  width: 100%;
+  padding: 0.6em 1.14em 0.7em 1.14em;
+  border-radius: 3px;
+}
+
+.sign-main-content .btn-button > button.btn {
+  font-size: 1.2em;
+  background: transparent;
+  border: 2px solid;
+  -o-border-image: linear-gradient(#00f8c0, #2475ff) 10;
+     border-image: -webkit-gradient(linear, left top, left bottom, from(#00f8c0), to(#2475ff)) 10;
+     border-image: linear-gradient(#00f8c0, #2475ff) 10;
+  border-radius: 3px;
+  outline: none;
+  color: whitesmoke;
+  text-align: center;
+  cursor: pointer;
+}
+
+.sign-main-content .btn-button > button:hover {
+  color: #44ce7b;
 }
 
 .search {
@@ -443,7 +514,7 @@ h3 {
   padding: 1em;
 }
 
-form {
+.search form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -454,7 +525,7 @@ form {
   border-radius: 1em;
 }
 
-form .input-form {
+.search form .input-form {
   margin: 1em 1em 1em 1em;
   padding-left: 0.2em;
   width: 55%;
@@ -464,7 +535,7 @@ form .input-form {
   outline: none;
 }
 
-form .button {
+.search .button {
   margin: 0.8em;
   margin-left: -0.7em;
   width: 5%;
@@ -475,33 +546,8 @@ form .button {
   cursor: pointer;
 }
 
-form .button:hover {
+.search .button:hover {
   color: tomato;
-}
-
-.icon-truck {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: center;
-  font-family: monospace;
-  color: #000;
-  background-color: whitesmoke;
-  cursor: pointer;
-  border-top: 2px solid whitesmoke;
-}
-
-.icon-truck i {
-  position: relative;
-  -webkit-animation-iteration-count: 3;
-          animation-iteration-count: 3;
-  color: tomato;
-  width: 100%;
-  height: 100%;
 }
 
 .contact {
@@ -523,5 +569,18 @@ form .button:hover {
   text-align: center;
   background-color: whitesmoke;
   color: #000;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  line-height: 1.1;
+  font-family: monospace;
 }
 /*# sourceMappingURL=main.css.map */
