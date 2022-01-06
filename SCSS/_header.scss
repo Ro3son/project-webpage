@@ -27,9 +27,12 @@ header {
       font-size: 1.2em;
       width: 30%;
       margin-left: 1em;
-    .fa-user-circle {
-      margin-right: 2em;
-    }
+      .fa-user-circle {
+        margin-right: 2em;
+        a {
+          text-decoration: none;
+        }
+      }
       .user-circle {
         font-family: monospace;
         &:hover {
