@@ -1,82 +1,97 @@
-.sign-main-content {
-  display: block;
-  max-width: 30rem;
-  width: 100%;
-  height: 90%;
-  margin: 2em auto 1em auto;
-  padding: 1.71em 2em 0.5em 2em;
-  color: $lightGreen;
-  background-color: $color2a;
-  transition: max-width 0.15s ease-in;
-  border-radius: 4px;
-  .loginmain {
-    text-align: center;
-    line-height: 0.8;
-    padding: 0px 3.4em 0px 3.4em;
-    margin: 1.5em 0px 1.5em 0px;
-    box-sizing: inherit;
-    color: $colord9;
-    h1 {
-      font-size: 2em;
-      padding-bottom: 1em;
-      a {
-        text-decoration: underline;
-        list-style-type: none;
-        color: $colord9;
+.body-content {
+  background: $colord9;
+  .sign-main-content {
+    display: block;
+    max-width: 30rem;
+    width: 100%;
+    height: 90%;
+    margin: 2em auto 1em auto;
+    padding: 1.71em 2em 0.5em 2em;
+    color: $lightGreen;
+    background-color: $color2a;
+    transition: max-width 0.15s ease-in;
+    border-radius: 6px;
+    .loginmain {
+      text-align: center;
+      line-height: 0.8;
+      padding: 0px 3.4em 0px 3.4em;
+      margin: 1.5em 0px 1.5em 0px;
+      box-sizing: inherit;
+      color: $colord9;
+      h1 {
+        font-size: 2em;
+        padding-bottom: 1em;
+        a {
+          text-decoration: underline;
+          list-style-type: none;
+          color: $colord9;
+        }
       }
     }
-  }
-  form {
-    margin: 0;
-    padding: 0;
-  }
-  label {
-    font-size: 1.5em;
-  }
-  .inputform-label {
-    padding-bottom: 1em;
-    padding-right: 2.89em;
-    font-weight: 300;
-  }
-  input {
-    font-size: 1em;
-    border-radius: 3px;
-    border: 1px solid $white;
-    background: transparent;
-    color: $white;
-    outline: none;
-  }
-  input[type="text"] {
-    height: 3em;
-    width: 110%;
-    padding: 0.42em 1.14em 0.42em 1.14em;
-    border-radius: 3px;
-  }
-  input[type="password"] {
-    height: 3em;
-    width: 110%;
-    padding: 0.42em 1.14em 0.42em 1.14em;
-    border-radius: 3px;
-  }
-  .btn-button > button {
-    font-family: monospace;
-    margin-top: 1.75em;
-    width: 100%;
-    padding: 0.6em 1.14em 0.7em 1.14em;
-    border-radius: 3px;
-    &.btn {
-      font-size: 1.2em;
-      background: transparent;
-      border: 2px solid;
-      border-image: linear-gradient(#00f8c0, #2475ff) 10;
-      border-radius: 3px;
-      outline: none;
-      color: $white;
-      text-align: center;
-      cursor: pointer;
+    form {
+      margin: 0;
+      padding: 0;
     }
-    &:hover {
-      color: $green;
+    label {
+      font-size: 1.5em;
+    }
+    .inputform-label {
+      padding-bottom: 1em;
+      padding-right: 2.89em;
+      font-weight: 300;
+    }
+    input {
+      font-size: 1em;
+      border-radius: 3px;
+      border: 1px solid $white;
+      background: transparent;
+      color: $white;
+      outline: none;
+    }
+    input[type="text"] {
+      height: 3em;
+      width: 110%;
+      padding: 0.42em 1.14em 0.42em 1.14em;
+      border-radius: 3px;
+    }
+    input[type="password"] {
+      height: 3em;
+      width: 110%;
+      padding: 0.42em 1.14em 0.42em 1.14em;
+      border-radius: 3px;
+    }
+    .btn-button > button {
+      font-family: inherit;
+      margin-top: 1em;
+      width: 100%;
+      padding: 0.6em 0.5em 0.7em 0.5em;
+      border-radius: 3px;
+      &.btn {
+        font-size: 1.5em;
+        background: transparent;
+        border: 2px solid;
+        border-image: linear-gradient(#00f8c0, #2475ff) 10;
+        border-radius: 3px;
+        outline: none;
+        color: $white;
+        text-align: center;
+        cursor: pointer;
+      }
+      &:hover {
+        color: $colort;
+      }
+    }
+    a {
+      text-decoration: none;
+      color: $lightGreen;
+      i.fa-bicycle {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        font-size: 6em;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+      }
     }
   }
 }
