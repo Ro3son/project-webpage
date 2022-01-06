@@ -11,11 +11,7 @@ nav {
       width: 100%;
       text-align: center;
       align-items: center;
-      border: 2px solid #000;
-
-      &:hover {
-        background-color: tomato;
-      }
+      border: 2px solid $black;
       .dropbtn {
         padding: 1em 1em 1em 1em;
         font-size: 1em;
@@ -30,7 +26,7 @@ nav {
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         z-index: 1;
         a {
-          color: black;
+          color: $colord9;
           text-decoration: none;
           display: block;
         }
@@ -45,6 +41,7 @@ nav {
       h2 {
         font-family: monospace;
         font-size: 1em;
+        color: $colord9;
       }
       a {
         font-family: monospace;
@@ -53,15 +50,15 @@ nav {
     }
     .row {
       width: 100%;
-      background-color: lightgrey;
+      background-color: $color2a;
       padding-top: 0.8em;
       a {
         padding-top: 1em;
+        &:hover {
+          color: $colort;
+          text-decoration: underline;
+        }
       }
-    }
-    .row a:hover {
-      color: tomato;
-      text-decoration: underline;
     }
   }
 }
