@@ -2,9 +2,11 @@
   justify-content: center;
   position: relative;
   margin: auto;
+  padding-bottom: 2em;
   align-items: center;
   overflow: hidden;
   width: 100%;
+  background-color: $lightGreen;
 }
 .container {
   display: inline-block;
@@ -21,9 +23,11 @@
   width: 100%;
   .mySlides {
     justify-content: center;
-    border: 2px solid #000;
+    border: 2px solid $black;
+    box-shadow: 5px 10px $black;
     overflow: hidden;
     position: relative;
+    background-color: $white;
     cursor: pointer;
     font-size: 1em;
     img {
