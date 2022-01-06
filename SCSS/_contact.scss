@@ -1,10 +1,14 @@
 .contact {
   font-family: monospace;
   font-size: 2em;
-  margin: 1em auto auto auto;
+  margin: auto auto auto auto;
   padding: 4em 1em 4em 1em;
   width: 100%;
   text-align: center;
   background-color: #000;
   color: whitesmoke;
+  h4 {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
 }
