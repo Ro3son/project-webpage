@@ -51,6 +51,10 @@ header .container .icons .fa-user-circle {
   margin-right: 2em;
 }
 
+header .container .icons .fa-user-circle a {
+  text-decoration: none;
+}
+
 header .container .icons .user-circle {
   font-family: monospace;
 }
@@ -92,11 +96,7 @@ nav .nav-bar .dropdown {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 2px solid #000;
-}
-
-nav .nav-bar .dropdown:hover {
-  background-color: tomato;
+  border: 2px solid #0e1318;
 }
 
 nav .nav-bar .dropdown .dropbtn {
@@ -117,7 +117,7 @@ nav .nav-bar .dropdown .dropdown-content {
 }
 
 nav .nav-bar .dropdown .dropdown-content a {
-  color: black;
+  color: #d9eee1;
   text-decoration: none;
   display: block;
 }
@@ -129,6 +129,7 @@ nav .nav-bar .dropdown:hover .dropdown-content {
 nav .nav-bar .column h2 {
   font-family: monospace;
   font-size: 1em;
+  color: #d9eee1;
 }
 
 nav .nav-bar .column a {
@@ -138,7 +139,7 @@ nav .nav-bar .column a {
 
 nav .nav-bar .row {
   width: 100%;
-  background-color: lightgrey;
+  background-color: #2a2d2f;
   padding-top: 0.8em;
 }
 
@@ -157,11 +158,13 @@ nav .nav-bar .row a:hover {
           justify-content: center;
   position: relative;
   margin: auto;
+  padding-bottom: 2em;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
   width: 100%;
+  background-color: #8ae1b0;
 }
 
 .container {
@@ -187,9 +190,12 @@ nav .nav-bar .row a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: 2px solid #000;
+  border: 2px solid #0e1318;
+  -webkit-box-shadow: 5px 10px #0e1318;
+          box-shadow: 5px 10px #0e1318;
   overflow: hidden;
   position: relative;
+  background-color: whitesmoke;
   cursor: pointer;
   font-size: 1em;
 }
@@ -399,7 +405,11 @@ nav .nav-bar .row a:hover {
   }
 }
 
-.sign-main-content {
+.body-content {
+  background: #d9eee1;
+}
+
+.body-content .sign-main-content {
   display: block;
   max-width: 30rem;
   width: 100%;
@@ -410,10 +420,10 @@ nav .nav-bar .row a:hover {
   background-color: #2a2d2f;
   -webkit-transition: max-width 0.15s ease-in;
   transition: max-width 0.15s ease-in;
-  border-radius: 4px;
+  border-radius: 6px;
 }
 
-.sign-main-content .loginmain {
+.body-content .sign-main-content .loginmain {
   text-align: center;
   line-height: 0.8;
   padding: 0px 3.4em 0px 3.4em;
@@ -423,33 +433,33 @@ nav .nav-bar .row a:hover {
   color: #d9eee1;
 }
 
-.sign-main-content .loginmain h1 {
+.body-content .sign-main-content .loginmain h1 {
   font-size: 2em;
   padding-bottom: 1em;
 }
 
-.sign-main-content .loginmain h1 a {
+.body-content .sign-main-content .loginmain h1 a {
   text-decoration: underline;
   list-style-type: none;
   color: #d9eee1;
 }
 
-.sign-main-content form {
+.body-content .sign-main-content form {
   margin: 0;
   padding: 0;
 }
 
-.sign-main-content label {
+.body-content .sign-main-content label {
   font-size: 1.5em;
 }
 
-.sign-main-content .inputform-label {
+.body-content .sign-main-content .inputform-label {
   padding-bottom: 1em;
   padding-right: 2.89em;
   font-weight: 300;
 }
 
-.sign-main-content input {
+.body-content .sign-main-content input {
   font-size: 1em;
   border-radius: 3px;
   border: 1px solid whitesmoke;
@@ -458,30 +468,30 @@ nav .nav-bar .row a:hover {
   outline: none;
 }
 
-.sign-main-content input[type="text"] {
+.body-content .sign-main-content input[type="text"] {
   height: 3em;
   width: 110%;
   padding: 0.42em 1.14em 0.42em 1.14em;
   border-radius: 3px;
 }
 
-.sign-main-content input[type="password"] {
+.body-content .sign-main-content input[type="password"] {
   height: 3em;
   width: 110%;
   padding: 0.42em 1.14em 0.42em 1.14em;
   border-radius: 3px;
 }
 
-.sign-main-content .btn-button > button {
-  font-family: monospace;
-  margin-top: 1.75em;
+.body-content .sign-main-content .btn-button > button {
+  font-family: inherit;
+  margin-top: 1em;
   width: 100%;
-  padding: 0.6em 1.14em 0.7em 1.14em;
+  padding: 0.6em 0.5em 0.7em 0.5em;
   border-radius: 3px;
 }
 
-.sign-main-content .btn-button > button.btn {
-  font-size: 1.2em;
+.body-content .sign-main-content .btn-button > button.btn {
+  font-size: 1.5em;
   background: transparent;
   border: 2px solid;
   -o-border-image: linear-gradient(#00f8c0, #2475ff) 10;
@@ -494,8 +504,26 @@ nav .nav-bar .row a:hover {
   cursor: pointer;
 }
 
-.sign-main-content .btn-button > button:hover {
-  color: #44ce7b;
+.body-content .sign-main-content .btn-button > button:hover {
+  color: tomato;
+}
+
+.body-content .sign-main-content a {
+  text-decoration: none;
+  color: #8ae1b0;
+}
+
+.body-content .sign-main-content a i.fa-bicycle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  font-size: 6em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 
 .search {
@@ -553,12 +581,17 @@ nav .nav-bar .row a:hover {
 .contact {
   font-family: monospace;
   font-size: 2em;
-  margin: 1em auto auto auto;
+  margin: auto auto auto auto;
   padding: 4em 1em 4em 1em;
   width: 100%;
   text-align: center;
   background-color: #000;
   color: whitesmoke;
+}
+
+.contact h4 {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 
 .footer {
