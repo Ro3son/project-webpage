@@ -3,16 +3,16 @@
     font-family: monospace;
   }
   .header {
-    background-color: #000;
-    color: whitesmoke;
+    background-color: $black;
+    color: $white;
     .container {
       h1 {
-        border: 4px solid whitesmoke;
+        border: 4px solid $white;
         font-size: 2em;
         padding: 0.2em 0.3em 0.2em 0.3em;
       }
       a {
-        color: whitesmoke;
+        color: $white;
       }
     }
     .icons {
@@ -20,7 +20,7 @@
 
       i {
         span:hover {
-          color: tomato;
+          color: $colort;
         }
       }
     }
@@ -60,6 +60,9 @@
   }
   .main {
     .container {
+      .btn {
+        font-size: 1.2em;
+      }
       .flex-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -169,24 +172,26 @@
     }
   }
   .search {
+    background-color: $colord9;
     .form {
       width: 100%;
     }
     .button {
       width: 8%;
       &:hover {
-        color: tomato;
+        color: $colort;
       }
     }
   }
   .nav {
+    background: $colord9;
     .nav-bar {
       padding-bottom: 2em;
       .dropdown {
-        border: 2px solid #000;
+        border: 2px solid $black;
         font-size: 2em;
         &:hover {
-          background-color: tomato;
+          background-color: $lightGreen;
         }
         .dropdown-content {
           font-size: 1em;
