@@ -6,7 +6,6 @@
   align-items: center;
   overflow: hidden;
   width: 100%;
-  background-color: $lightGreen;
 }
 .container {
   display: inline-block;
@@ -24,12 +23,14 @@
   .mySlides {
     justify-content: center;
     border: 2px solid $black;
-    box-shadow: 5px 10px $black;
     overflow: hidden;
     position: relative;
     background-color: $white;
     cursor: pointer;
     font-size: 1em;
+    &:hover {
+      background-color: $lightGreen;
+    }
     img {
       font-size: 1em;
       width: 25%;
@@ -44,11 +45,15 @@
     }
     .btn {
       width: 30%;
-      border: 2px solid #000;
-      font-size: 1em;
+      border: 2px solid $black;
+      border-radius: 4px 2px;
+      font-size: 1.5em;
+      font-family: inherit;
+      padding: 0.4em 0.4em 0.4em 0.4em;
       margin-bottom: 1em;
+      cursor: pointer;
       &:hover {
-        background-color: tomato;
+        background-color: $colort;
       }
     }
   }
