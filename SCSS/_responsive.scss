@@ -144,15 +144,18 @@
 @media only screen and (min-width: 1200px) {
   .header {
     background-color: transparent;
-    color: #000;
     .container {
+      background-color: $color2a;
       h1 {
         border: 4px solid #000;
         font-size: 5em;
         padding: 0.2em 0.3em 0.2em 0.3em;
+        border-image: linear-gradient(#00f8c0, #2475ff) 10;
+        border-radius: 3px;
       }
       a {
-        color: #000;
+        color: $colord9;
+        text-decoration: none;
       }
     }
     .icons {
