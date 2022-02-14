@@ -1,222 +1,26 @@
-@media only screen and (min-width: 280px) {
-  body {
-    font-family: monospace;
-  }
-  .header {
-    background-color: $black;
-    color: $white;
-    .container {
-      h1 {
-        border: 4px solid $white;
-        font-size: 2em;
-        padding: 0.2em 0.3em 0.2em 0.3em;
-      }
-      a {
-        color: $white;
-      }
-    }
-    .icons {
-      padding-left: 2em;
+/* Breakpoints are customizable widths that determine 
+ how your responsive layout behaves across device or viewport sizes */
 
-      i {
-        span:hover {
-          color: $colort;
-        }
-      }
-    }
-  }
-  .search {
-    .form {
-      width: 100%;
-    }
-    .button {
-      width: 8%;
-      &:hover {
-        color: tomato;
-      }
-    }
-  }
-  .nav {
-    .nav-bar {
-      .dropdown {
-        border: none;
-        border-radius: 0px;
-        font-size: 2em;
-        &:hover {
-          background-color: tomato;
-        }
-        .dropdown-content {
-          font-size: 1em;
-          width: 100%;
-        }
-      }
-    }
-  }
-  .icon-truck {
-    h2,
-    i {
-      display: none;
-    }
-  }
-  .main {
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .header {
     .container {
-      .btn {
-        font-size: 1.2em;
-        font-family: inherit;
-      }
-      .flex-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        align-items: center;
-        gap: 1em;
-        margin: auto;
-        width: 100%;
+      .brand,
+      a {
+        font-size: 1rem !important;
       }
     }
   }
 }
-@media only screen and (min-width: 780px) {
-  .header {
-    background-color: #000;
-    color: whitesmoke;
-    .container {
-      h1 {
-        border: 4px solid whitesmoke;
-        font-size: 3.4em;
-        padding: 0.2em 0.3em 0.2em 0.3em;
-      }
-      a {
-        color: whitesmoke;
-      }
-    }
-    .icons {
-      padding-left: 2em;
-
-      i {
-        span:hover {
-          color: tomato;
-        }
-      }
-    }
-  }
-  .search {
-    .form {
-      width: 100%;
-    }
-    .button {
-      width: 8%;
-      &:hover {
-        color: tomato;
-      }
-    }
-  }
-  .nav {
-    .nav-bar {
-      .dropdown {
-        border: none;
-        border-radius: 0px;
-        font-size: 2em;
-        &:hover {
-          background-color: tomato;
-        }
-        .dropdown-content {
-          font-size: 1em;
-          width: 100%;
-        }
-      }
-    }
-  }
-  .icon-truck {
-    h2,
-    i {
-      display: none;
-    }
-  }
-  .main {
-    .container {
-      .flex-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        align-items: center;
-        gap: 1em;
-        margin: auto;
-        width: 100%;
-      }
-    }
-  }
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
 }
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  .header {
-    background-color: transparent;
-    .container {
-      background-color: $color2a;
-      h1 {
-        border: 4px solid #000;
-        font-size: 5em;
-        padding: 0.2em 0.3em 0.2em 0.3em;
-        border-image: linear-gradient(#00f8c0, #2475ff) 10;
-        border-radius: 3px;
-      }
-      a {
-        color: $colord9;
-        text-decoration: none;
-      }
-    }
-    .icons {
-      padding-left: 2em;
-
-      i {
-        span:hover {
-          color: tomato;
-        }
-      }
-    }
-  }
-  .search {
-    background-color: $colord9;
-    .form {
-      width: 100%;
-    }
-    .button {
-      width: 8%;
-      &:hover {
-        color: $colort;
-      }
-    }
-  }
-  .nav {
-    background: $colord9;
-    .nav-bar {
-      padding-bottom: 2em;
-      .dropdown {
-        border: 2px solid $black;
-        font-size: 2em;
-        &:hover {
-          background-color: $lightGreen;
-        }
-        .dropdown-content {
-          font-size: 1em;
-          width: 100%;
-        }
-      }
-    }
-  }
-  .icon-truck {
-    h2,
-    i {
-      display: none;
-    }
-  }
-  .main {
-    .container {
-      .flex-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        align-items: center;
-        gap: 1em;
-        margin: auto;
-        width: 100%;
-      }
-    }
-  }
 }
