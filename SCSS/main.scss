@@ -1,20 +1,4 @@
-@import "variables";
+@import "colors";
 @import "header";
 @import "nav";
-@import "container";
 @import "responsive";
-@import "login";
-@import "search-form";
-@import "contact";
-@import "footer";
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-body {
-  height: 100vh;
-  line-height: 1.1;
-  font-family: monospace;
-}
