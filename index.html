@@ -1,137 +1,73 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <title>SPORT BIKE</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="SCSS/main.css" />
-    <script
-      src="https://kit.fontawesome.com/efda80027a.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
 
-  <body>
-    <header class="header">
-      <div class="container">
-        <h1><a href="#!">BICICLETARIA ESPORTE</a></h1>
-        <div class="icons">
-          <i class="fas fa-user-circle">
-            <a href="login.html"><span class="user-circle"> Entre</span></a>
-          </i>
-          <i class="fas fa-shopping-cart"
-            ><span class="shopping-cart"> Carrinho</span>
-          </i>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BIKE ESPORTE</title>
+  <link rel="icon" type="image/png" sizes="16x16" href="image/favicon-16x16.png" />
+  <link rel="stylesheet" href="SCSS/main.css" />
+  <script src="https://kit.fontawesome.com/efda80027a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="header">
+    <div class="container">
+      <div class="brand">
+        <a href="#">
+          <img src="image/android-chrome-192x192.png" alt="Bdebicicleta" width="40" height="32" />
+          Esporte
+        </a>
       </div>
-    </header>
-    <div class="search">
-      <form class="form">
-        <input
-          class="input-form"
-          type="search"
-          placeholder="Faça aqui uma busca :)"
-        />
-        <button class="button" type="submit" title="Buscar">
-          <i class="fas fa-search"></i>
-        </button>
-      </form>
+      <div class="list">
+        <ul>
+          <li>CENTRAL DE ATENDIMENTO</li>
+        </ul>
+      </div>
+
+      <div class="container-btn">
+        <button class="btn" type="button">LOGIN</button>
+        <button class="btn" type="button">CARRINHO</button>
+      </div>
     </div>
 
-    <nav class="nav">
-      <div class="nav-bar">
-        <div class="dropdown">
-          <button class="dropbtn"><i class="fas fa-bicycle"></i></button>
-          <div class="dropdown-content">
-            <div class="row">
-              <div class="column">
-                <h2><strong>Bicicletas</strong></h2>
-                <a href="#bikemtb">Bike MTB</a>
-                <a href="#bikepeed">Bike Speed</a>
-                <a href="#bikeinfantil">Bike Infantil</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="dropdown">
-          <button class="dropbtn"><i class="fas fa-cogs"></i></button>
-          <div class="dropdown-content">
-            <div class="row">
-              <div class="column">
-                <h2><strong>Componentes</strong></h2>
-                <a href="#rodamtb">Rodas de MTB</a>
-                <a href="#rodaspeed">Rodas de Speed</a>
-                <a href="#camarasdear">Câmaras de ar</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="dropdown">
-          <button class="dropbtn"><i class="fas fa-tshirt"></i></button>
-          <div class="dropdown-content">
-            <div class="row">
-              <div class="column">
-                <h2><strong>Roupas</strong></h2>
-                <a href="#bermudas">Bermudas</a>
-                <a href="#camisasmangalonga">Camisas Manga Longa</a>
-                <a href="#camisasmangalonga">Camisas Manga Curta</a>
-              </div>
-            </div>
-          </div>
-        </div>
+    <div class="container-form">
+      <div class="form-search">
+        <form>
+          <input class="form-control" type="search" placeholder="Faça uma busca aqui.." />
+        </form>
       </div>
-    </nav>
-    <main class="main">
-      <div class="container">
-        <div class="flex-container">
-          <div class="mySlides">
-            <img class="demo cursor" src="#" />
-            <h3>BMX</h3>
-            <p>$0.000,00</p>
-            <button class="btn">Comprar</button>
-          </div>
-          <div class="mySlides">
-            <img class="demo cursor" src="#" />
-            <h3>Cruiser</h3>
-            <p>$0.000,00</p>
-            <button class="btn">Comprar</button>
-          </div>
-          <div class="mySlides">
-            <img class="demo cursor" src="#" />
-            <h3>Folding</h3>
-            <p>$0.000,00</p>
-            <button class="btn">Comprar</button>
-          </div>
-          <div class="mySlides">
-            <img class="demo cursor" src="#" />
-            <h3>MTB</h3>
-            <p>$0.000,00</p>
-            <button class="btn">Comprar</button>
-          </div>
-          <div class="mySlides">
-            <img class="demo cursor" src="#" />
-            <h3>Road</h3>
-            <p>$0.000,00</p>
-            <button class="btn">Comprar</button>
-          </div>
-          <div class="mySlides">
-            <img class="demo cursor" src="#" />
-            <h3>Track</h3>
-            <p>$0.000,00</p>
-            <button class="btn">Comprar</button>
-          </div>
-        </div>
-      </div>
-    </main>
-
-    <div class="contact">
-      <h4>Contato</h4>
-      <a href="https://github.com/Ro3son"><i class="fab fa-reddit"></i></a>
     </div>
+  </div>
+  <div class="navbar">
+    <div class="container">
+      <div class="flex-item-one">
+        <ul>
+          <li class="item-one">ELETRICAS</li>
+        </ul>
+      </div>
+      <div class="flex-item-two">
+        <ul>
+          <li class="item">COMPONENTES</li>
+        </ul>
+      </div>
+      <div class="flex-item-three">
+        <ul>
+          <li class="item">ADULTOS</li>
+        </ul>
+      </div>
+      <div class="flex-item-four">
+        <ul>
+          <li class="item">CRIANÇAS</li>
+        </ul>
+      </div>
+      <div class="flex-item-five">
+        <ul>
+          <li class="item">ACESSORIOS</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
 
-    <footer class="footer">
-      <p>Esta página é só um projeto</p>
-      <p>Nenhum direito reservado</p>
-    </footer>
-  </body>
 </html>
