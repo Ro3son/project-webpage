@@ -4,13 +4,70 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .header {
+    background-color: $black2a;
+    font-family: monospace;
     .container {
-      .brand,
-      a {
-        font-size: 1rem !important;
+      display: flex;
+      padding: auto;
+      margin: auto;
+      width: 100%;
+      gap: 0.5rem;
+      div {
+        height: 3.2rem;
+        flex: 1;
+        .brand-link {
+          font-size: 1.2rem;
+          text-decoration: none;
+          color: $greend9;
+        }
+        .list,
+        ul {
+          padding: 1rem;
+          text-align: center;
+          font-size: 0.8rem;
+        }
       }
     }
+    .container-links {
+      display: flex;
+      div {
+        padding: 16px;
+        height: 2rem;
+        flex: 1;
+      }
+      .fa-user-circle {
+        //   font-size: 1.4rem;
+        //   text-decoration: none;
+        //   color: $greend9;
+        span {
+          display: none;
+        }
+      }
+      // .fa-shopping-cart {
+      //   font-size: 1.4rem;
+      //   text-decoration: none;
+      //   color: $greend9;
+      // }
+    }
   }
+  // .container-form {
+  //   display: flex;
+  //   background-color: $black0e;
+  //   .form-search {
+  //     padding: 1rem;
+  //     height: 2rem;
+  //     flex: 1;
+  //     form {
+  //       display: flex;
+  //       justify-content: center;
+  //       input {
+  //         height: 30px;
+  //         width: 50%;
+  //       }
+  //     }
+  //   }
+  //   }
+  // }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
