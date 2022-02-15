@@ -18,9 +18,8 @@
           flex: 1;
 }
 
-.header .container div .brand,
-.header .container div a {
-  font-size: 2.2rem;
+.header .container div .brand-link {
+  font-size: 2rem;
   text-decoration: none;
   color: #d9eee1;
 }
@@ -40,18 +39,31 @@
   text-align: center;
 }
 
-.header .container-btn {
+.header .container-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 0.5rem;
 }
 
-.header .container-btn button {
+.header .container-links div {
+  padding: 16px;
   height: 2rem;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+}
+
+.header .container-links div .fa-user-circle {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: #d9eee1;
+}
+
+.header .container-links div .fa-shopping-cart {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: #d9eee1;
 }
 
 .header .container-form {
@@ -112,9 +124,50 @@
  how your responsive layout behaves across device or viewport sizes */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  .header .container .brand,
-  .header .container a {
-    font-size: 1rem !important;
+  .header {
+    background-color: #2a2d2f;
+    font-family: monospace;
+  }
+  .header .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: auto;
+    margin: auto;
+    width: 100%;
+    gap: 0.5rem;
+  }
+  .header .container div {
+    height: 3.2rem;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .header .container div .brand-link {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #d9eee1;
+  }
+  .header .container div .list,
+  .header .container div ul {
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.8rem;
+  }
+  .header .container-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header .container-links div {
+    padding: 16px;
+    height: 2rem;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .header .container-links .fa-user-circle span {
+    display: none;
   }
 }
 
