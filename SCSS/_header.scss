@@ -8,9 +8,8 @@
       padding: 1.2rem;
       height: 3rem;
       flex: 1;
-      .brand,
-      a {
-        font-size: 2.2rem;
+      .brand-link {
+        font-size: 2rem;
         text-decoration: none;
         color: $greend9;
       }
@@ -26,12 +25,23 @@
       }
     }
   }
-  .container-btn {
+  .container-links {
     display: flex;
     gap: 0.5rem;
-    button {
+    div {
+      padding: 16px;
       height: 2rem;
       flex: 1;
+      .fa-user-circle {
+        font-size: 1.4rem;
+        text-decoration: none;
+        color: $greend9;
+      }
+      .fa-shopping-cart {
+        font-size: 1.4rem;
+        text-decoration: none;
+        color: $greend9;
+      }
     }
   }
   .container-form {
