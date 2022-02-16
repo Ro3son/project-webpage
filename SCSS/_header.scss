@@ -1,49 +1,60 @@
 .header {
   background-color: $black2a;
-  font-family: monospace;
-  .container {
+  font-family: sans-serif;
+  .flex-container {
     display: flex;
-    gap: 0.5rem;
+    padding: 16px;
+    height: 100px;
+    gap: 5px;
     div {
-      padding: 1.2rem;
-      height: 3rem;
-      flex: 1;
-      .brand-link {
-        font-size: 2rem;
-        text-decoration: none;
+      padding: 10px;
+    }
+    .flex-item-brand {
+      background-color: lightblue;
+      flex: 2;
+      span,
+      .brand {
+        font-size: 2.2em;
         color: $greend9;
       }
-      .list,
-      ul {
-        font-size: 1rem;
-        list-style-type: none;
+    }
+    .flex-item-link {
+      background-color: lightgreen;
+      flex: initial;
+      a,
+      .link {
+        text-align: center;
+        font-size: 1em;
         color: $greend9;
-        flex: 1 1 0%;
-        li {
-          text-align: center;
+      }
+    }
+    .flex-item-user {
+      background-color: lightcoral;
+      flex: initial;
+      a,
+      .user {
+        font-size: 1em;
+        color: $greend9;
+      }
+    }
+    .container {
+      background-color: lightpink;
+      display: flex;
+      justify-content: end;
+      flex: 2;
+      .flex-item-cart {
+        background-color: lightseagreen;
+        height: 50px;
+        padding: 16px;
+        .fa-shopping-cart {
+          font-size: 2em;
+          color: $greend9;
+          // flex: 1;
         }
       }
     }
   }
-  .container-links {
-    display: flex;
-    gap: 0.5rem;
-    div {
-      padding: 16px;
-      height: 2rem;
-      flex: 1;
-      .fa-user-circle {
-        font-size: 1.4rem;
-        text-decoration: none;
-        color: $greend9;
-      }
-      .fa-shopping-cart {
-        font-size: 1.4rem;
-        text-decoration: none;
-        color: $greend9;
-      }
-    }
-  }
+
   .container-form {
     display: flex;
     background-color: $black0e;
