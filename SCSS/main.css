@@ -1,68 +1,82 @@
 .header {
   background-color: #2a2d2f;
-  font-family: monospace;
+  font-family: sans-serif;
 }
 
-.header .container {
+.header .flex-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 0.5rem;
-}
-
-.header .container div {
-  padding: 1.2rem;
-  height: 3rem;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-}
-
-.header .container div .brand-link {
-  font-size: 2rem;
-  text-decoration: none;
-  color: #d9eee1;
-}
-
-.header .container div .list,
-.header .container div ul {
-  font-size: 1rem;
-  list-style-type: none;
-  color: #d9eee1;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 0%;
-          flex: 1 1 0%;
-}
-
-.header .container div .list li,
-.header .container div ul li {
-  text-align: center;
-}
-
-.header .container-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 0.5rem;
-}
-
-.header .container-links div {
   padding: 16px;
-  height: 2rem;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  height: 100px;
+  gap: 5px;
 }
 
-.header .container-links div .fa-user-circle {
-  font-size: 1.4rem;
-  text-decoration: none;
+.header .flex-container div {
+  padding: 10px;
+}
+
+.header .flex-container .flex-item-brand {
+  background-color: lightblue;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.header .flex-container .flex-item-brand span,
+.header .flex-container .flex-item-brand .brand {
+  font-size: 2.2em;
   color: #d9eee1;
 }
 
-.header .container-links div .fa-shopping-cart {
-  font-size: 1.4rem;
-  text-decoration: none;
+.header .flex-container .flex-item-link {
+  background-color: lightgreen;
+  -webkit-box-flex: initial;
+      -ms-flex: initial;
+          flex: initial;
+}
+
+.header .flex-container .flex-item-link a,
+.header .flex-container .flex-item-link .link {
+  text-align: center;
+  font-size: 1em;
+  color: #d9eee1;
+}
+
+.header .flex-container .flex-item-user {
+  background-color: lightcoral;
+  -webkit-box-flex: initial;
+      -ms-flex: initial;
+          flex: initial;
+}
+
+.header .flex-container .flex-item-user a,
+.header .flex-container .flex-item-user .user {
+  font-size: 1em;
+  color: #d9eee1;
+}
+
+.header .flex-container .container {
+  background-color: lightpink;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.header .flex-container .container .flex-item-cart {
+  background-color: lightseagreen;
+  height: 50px;
+  padding: 16px;
+}
+
+.header .flex-container .container .flex-item-cart .fa-shopping-cart {
+  font-size: 2em;
   color: #d9eee1;
 }
 
@@ -123,54 +137,6 @@
 /* Breakpoints are customizable widths that determine 
  how your responsive layout behaves across device or viewport sizes */
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  .header {
-    background-color: #2a2d2f;
-    font-family: monospace;
-  }
-  .header .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding: auto;
-    margin: auto;
-    width: 100%;
-    gap: 0.5rem;
-  }
-  .header .container div {
-    height: 3.2rem;
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-  }
-  .header .container div .brand-link {
-    font-size: 1.2rem;
-    text-decoration: none;
-    color: #d9eee1;
-  }
-  .header .container div .list,
-  .header .container div ul {
-    padding: 1rem;
-    text-align: center;
-    font-size: 0.8rem;
-  }
-  .header .container-links {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .header .container-links div {
-    padding: 16px;
-    height: 2rem;
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-  }
-  .header .container-links .fa-user-circle span {
-    display: none;
-  }
-}
-
 /* Small devices (portrait tablets and large phones, 600px and up) */
 /* Medium devices (landscape tablets, 768px and up) */
 /* Large devices (laptops/desktops, 992px and up) */
