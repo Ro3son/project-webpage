@@ -2,3 +2,12 @@
 @import "header";
 @import "nav";
 @import "responsive";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: monospace;
+}
