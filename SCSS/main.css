@@ -1,83 +1,72 @@
 .header {
   background-color: #2a2d2f;
-  font-family: sans-serif;
 }
 
-.header .flex-container {
+.header .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 16px;
-  height: 100px;
+  padding: 20px;
+  height: 150px;
   gap: 5px;
 }
 
-.header .flex-container div {
+.header .container div {
   padding: 10px;
 }
 
-.header .flex-container .flex-item-brand {
-  background-color: lightblue;
+.header .container .flex-item-brand {
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
 }
 
-.header .flex-container .flex-item-brand span,
-.header .flex-container .flex-item-brand .brand {
+.header .container .flex-item-brand span,
+.header .container .flex-item-brand .brand {
   font-size: 2.2em;
   color: #d9eee1;
 }
 
-.header .flex-container .flex-item-link {
-  background-color: lightgreen;
+.header .container .flex-item-link {
   -webkit-box-flex: initial;
       -ms-flex: initial;
           flex: initial;
 }
 
-.header .flex-container .flex-item-link a,
-.header .flex-container .flex-item-link .link {
+.header .container .flex-item-link a,
+.header .container .flex-item-link .link {
   text-align: center;
   font-size: 1em;
   color: #d9eee1;
 }
 
-.header .flex-container .flex-item-user {
-  background-color: lightcoral;
+.header .container .flex-item-user {
   -webkit-box-flex: initial;
       -ms-flex: initial;
           flex: initial;
 }
 
-.header .flex-container .flex-item-user a,
-.header .flex-container .flex-item-user .user {
+.header .container .flex-item-user a,
+.header .container .flex-item-user .user {
   font-size: 1em;
   color: #d9eee1;
 }
 
-.header .flex-container .container {
-  background-color: lightpink;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
+.header .container .flex-item-cart {
+  -webkit-box-flex: initial;
+      -ms-flex: initial;
+          flex: initial;
 }
 
-.header .flex-container .container .flex-item-cart {
-  background-color: lightseagreen;
-  height: 50px;
-  padding: 16px;
+.header .container .flex-item-cart i,
+.header .container .flex-item-cart .fa-shopping-cart {
+  color: tomato;
 }
 
-.header .flex-container .container .flex-item-cart .fa-shopping-cart {
-  font-size: 2em;
+.header .container .flex-item-cart span,
+.header .container .flex-item-cart .cart {
   color: #d9eee1;
+  text-decoration: underline;
 }
 
 .header .container-form {
@@ -85,10 +74,10 @@
   display: -ms-flexbox;
   display: flex;
   background-color: #0e1318;
+  padding: 16px;
 }
 
 .header .container-form .form-search {
-  padding: 1rem;
   height: 2rem;
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -102,36 +91,14 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header .container-form .form-search form input {
-  height: 30px;
+  height: 35px;
   width: 50%;
-}
-
-.navbar {
-  background-color: #f4f7f6;
-  font-family: sans-serif;
-}
-
-.navbar .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.navbar .container div {
-  padding: 2rem;
-  height: 50px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 0%;
-          flex: 1 1 0%;
-}
-
-.navbar .container div ul,
-.navbar .container div li {
-  text-decoration: underline;
-  list-style-type: none;
 }
 
 /* Breakpoints are customizable widths that determine 
@@ -141,4 +108,14 @@
 /* Medium devices (landscape tablets, 768px and up) */
 /* Large devices (laptops/desktops, 992px and up) */
 /* Extra large devices (large laptops and desktops, 1200px and up) */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: monospace;
+}
 /*# sourceMappingURL=main.css.map */
