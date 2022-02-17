@@ -1,16 +1,14 @@
 .header {
   background-color: $black2a;
-  font-family: sans-serif;
-  .flex-container {
+  .container {
     display: flex;
-    padding: 16px;
-    height: 100px;
+    padding: 20px;
+    height: 150px;
     gap: 5px;
     div {
       padding: 10px;
     }
     .flex-item-brand {
-      background-color: lightblue;
       flex: 2;
       span,
       .brand {
@@ -19,7 +17,6 @@
       }
     }
     .flex-item-link {
-      background-color: lightgreen;
       flex: initial;
       a,
       .link {
@@ -29,7 +26,6 @@
       }
     }
     .flex-item-user {
-      background-color: lightcoral;
       flex: initial;
       a,
       .user {
@@ -37,36 +33,32 @@
         color: $greend9;
       }
     }
-    .container {
-      background-color: lightpink;
-      display: flex;
-      justify-content: end;
-      flex: 2;
-      .flex-item-cart {
-        background-color: lightseagreen;
-        height: 50px;
-        padding: 16px;
-        .fa-shopping-cart {
-          font-size: 2em;
-          color: $greend9;
-          // flex: 1;
-        }
+    .flex-item-cart {
+      flex: initial;
+      i,
+      .fa-shopping-cart {
+        color: $colort;
+      }
+      span,
+      .cart {
+        color: $greend9;
+        text-decoration: underline;
       }
     }
   }
-
   .container-form {
     display: flex;
     background-color: $black0e;
+    padding: 16px;
     .form-search {
-      padding: 1rem;
       height: 2rem;
       flex: 1;
       form {
         display: flex;
         justify-content: center;
+        align-items: center;
         input {
-          height: 30px;
+          height: 35px;
           width: 50%;
         }
       }
