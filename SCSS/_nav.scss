@@ -1,1 +1,29 @@
-
+.navbar {
+  background-color: whitesmoke;
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 150px;
+    gap: 5px;
+    ul {
+      list-style-type: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+      gap: 14px;
+      font-size: 2em;
+      li {
+        cursor: pointer;
+        color: $black0e;
+        font-weight: lighter;
+        &:hover {
+          background-color: $black2a;
+          color: $whiteff;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
