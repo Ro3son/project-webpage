@@ -10,39 +10,55 @@
     }
     .flex-item-brand {
       flex: 2;
+      &:hover {
+        font-size: 2.1em;
+      }
       span,
       .brand {
-        font-size: 2.2em;
+        font-size: 2em;
         color: $greend9;
       }
     }
-    .flex-item-link {
+    .flex-item-contact {
       flex: initial;
       a,
       .link {
-        text-align: center;
-        font-size: 1em;
+        font-size: 2em;
         color: $greend9;
+        &:hover {
+          text-decoration: none;
+          font-size: 2.1em;
+        }
       }
     }
     .flex-item-user {
       flex: initial;
       a,
       .user {
-        font-size: 1em;
+        font-size: 2em;
         color: $greend9;
+        &:hover {
+          text-decoration: none;
+          font-size: 2.1em;
+        }
       }
     }
     .flex-item-cart {
       flex: initial;
       i,
       .fa-shopping-cart {
-        color: $colort;
+        font-size: 2em;
+        color: $colorff6;
       }
       span,
       .cart {
+        font-size: 2em;
         color: $greend9;
         text-decoration: underline;
+        &:hover {
+          text-decoration: none;
+          font-size: 2.1em;
+        }
       }
     }
   }
