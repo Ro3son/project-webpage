@@ -21,23 +21,32 @@
           flex: 2;
 }
 
+.header .container .flex-item-brand:hover {
+  font-size: 2.1em;
+}
+
 .header .container .flex-item-brand span,
 .header .container .flex-item-brand .brand {
-  font-size: 2.2em;
+  font-size: 2em;
   color: #d9eee1;
 }
 
-.header .container .flex-item-link {
+.header .container .flex-item-contact {
   -webkit-box-flex: initial;
       -ms-flex: initial;
           flex: initial;
 }
 
-.header .container .flex-item-link a,
-.header .container .flex-item-link .link {
-  text-align: center;
-  font-size: 1em;
+.header .container .flex-item-contact a,
+.header .container .flex-item-contact .link {
+  font-size: 2em;
   color: #d9eee1;
+}
+
+.header .container .flex-item-contact a:hover,
+.header .container .flex-item-contact .link:hover {
+  text-decoration: none;
+  font-size: 2.1em;
 }
 
 .header .container .flex-item-user {
@@ -48,8 +57,14 @@
 
 .header .container .flex-item-user a,
 .header .container .flex-item-user .user {
-  font-size: 1em;
+  font-size: 2em;
   color: #d9eee1;
+}
+
+.header .container .flex-item-user a:hover,
+.header .container .flex-item-user .user:hover {
+  text-decoration: none;
+  font-size: 2.1em;
 }
 
 .header .container .flex-item-cart {
@@ -60,13 +75,21 @@
 
 .header .container .flex-item-cart i,
 .header .container .flex-item-cart .fa-shopping-cart {
-  color: tomato;
+  font-size: 2em;
+  color: #ff6347;
 }
 
 .header .container .flex-item-cart span,
 .header .container .flex-item-cart .cart {
+  font-size: 2em;
   color: #d9eee1;
   text-decoration: underline;
+}
+
+.header .container .flex-item-cart span:hover,
+.header .container .flex-item-cart .cart:hover {
+  text-decoration: none;
+  font-size: 2.1em;
 }
 
 .header .container-form {
@@ -99,6 +122,48 @@
 .header .container-form .form-search form input {
   height: 35px;
   width: 50%;
+}
+
+.navbar {
+  background-color: whitesmoke;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  height: 150px;
+  gap: 5px;
+}
+
+.navbar .container ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 14px;
+  font-size: 2em;
+}
+
+.navbar .container ul li {
+  cursor: pointer;
+  color: #0e1318;
+  font-weight: lighter;
+}
+
+.navbar .container ul li:hover {
+  background-color: #2a2d2f;
+  color: #ffffff;
+  text-decoration: underline;
 }
 
 /* Breakpoints are customizable widths that determine 
