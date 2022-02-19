@@ -19,15 +19,17 @@
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
+  cursor: pointer;
 }
 
 .header .container .flex-item-brand:hover {
-  font-size: 2.1em;
+  text-decoration: underline;
+  color: #ff6347;
 }
 
 .header .container .flex-item-brand span,
 .header .container .flex-item-brand .brand {
-  font-size: 2em;
+  font-size: 4.2em;
   color: #d9eee1;
 }
 
@@ -71,6 +73,7 @@
   -webkit-box-flex: initial;
       -ms-flex: initial;
           flex: initial;
+  cursor: pointer;
 }
 
 .header .container .flex-item-cart i,
@@ -101,7 +104,7 @@
 }
 
 .header .container-form .form-search {
-  height: 2rem;
+  height: 35px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
