@@ -10,12 +10,14 @@
     }
     .flex-item-brand {
       flex: 2;
+      cursor: pointer;
       &:hover {
-        font-size: 2.1em;
+        text-decoration: underline;
+        color: $colorff6;
       }
       span,
       .brand {
-        font-size: 2em;
+        font-size: 4.2em;
         color: $greend9;
       }
     }
@@ -45,6 +47,7 @@
     }
     .flex-item-cart {
       flex: initial;
+      cursor: pointer;
       i,
       .fa-shopping-cart {
         font-size: 2em;
@@ -67,7 +70,7 @@
     background-color: $black0e;
     padding: 16px;
     .form-search {
-      height: 2rem;
+      height: 35px;
       flex: 1;
       form {
         display: flex;
