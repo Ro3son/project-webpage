@@ -2,13 +2,116 @@
  how your responsive layout behaves across device or viewport sizes */
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
+  .header {
+    .container {
+      display: flex;
+      padding: 12px;
+      height: 110px;
+      gap: 5px;
+      div {
+        padding: 10px;
+      }
+      .flex-item-brand {
+        flex: 1;
+        cursor: pointer;
+        img {
+          width: 75px !important;
+          height: 75px !important;
+        }
+        span,
+        .brand {
+          display: none;
+        }
+      }
+      .flex-item-contact {
+        flex: initial;
+        a,
+        .link {
+          .span {
+            display: none;
+          }
+        }
+      }
+      .flex-item-user {
+        flex: initial;
+        a,
+        .user {
+          .span {
+            display: none;
+          }
+        }
+      }
+      .flex-item-cart {
+        flex: initial;
+        cursor: pointer;
+        i,
+        .fa-shopping-cart {
+          font-size: 2em;
+          color: $colorff6;
+        }
+        span,
+        .cart {
+          display: none;
+        }
+      }
+    }
+  }
+  .navbar {
+    color: white;
+    background-color: #000;
+    border-radius: 10px;
+    .container {
+      // display: block !important;
+      padding: 16px;
+      height: 250px;
+      overflow: hidden;
+      background-color: whitesmoke;
+      position: relative;
+      #items {
+        display: none;
+        ul,
+        li {
+          display: block;
+          color: $black0e;
+          font-size: 1.2em;
+          padding: 5px 5px;
+          font-weight: lighter;
+          &:hover {
+            color: $whiteff;
+            text-decoration: underline;
+          }
+        }
+      }
+      a {
+        text-decoration: none;
+        color: $black0e;
+        padding: 14px 16px;
+        font-size: 16px;
+        display: block;
+      }
+      a,
+      .icon {
+        display: block;
+        font-size: 2em;
+        color: $colorff6;
+      }
+    }
+  }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+  .navbar {
+    .container {
+      a,
+      .icon {
+        display: none;
+      }
+    }
+  }
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
