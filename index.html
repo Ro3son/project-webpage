@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BIKE ESPORTE</title>
-  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png" />
   <link rel="stylesheet" href="SCSS/main.css" />
   <script src="https://kit.fontawesome.com/efda80027a.js" crossorigin="anonymous"></script>
 </head>
@@ -44,15 +44,20 @@
   </div>
   <div class="navbar">
     <div class="container">
-      <ul>
-        <li class="item-one">BIKES</li>
-        <li class="item-two">COMPONENTES</li>
-        <li class="item-three">ADULTOS</li>
-        <li class="item-four">CRIANÇAS</li>
-        <li class="item-five">ACESSÓRIOS</li>
-      </ul>
+      <div id="items">
+        <ul>
+          <li class="item-one">BIKES</li>
+          <li class="item-two">COMPONENTES</li>
+          <li class="item-three">ADULTOS</li>
+          <li class="item-four">CRIANÇAS</li>
+          <li class="item-five">ACESSÓRIOS</li>
+        </ul>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="toggler()">
+        <i onclick="myFunction(this)" class="fa-solid fa-bars"></i></a>
     </div>
   </div>
+  <script src="script.js"></script>
 </body>
 
 </html>
