@@ -147,7 +147,6 @@
 }
 
 .navbar .container ul {
-  list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -161,6 +160,7 @@
   cursor: pointer;
   color: #0e1318;
   font-weight: lighter;
+  list-style-type: none;
 }
 
 .navbar .container ul li:hover {
@@ -172,8 +172,117 @@
 /* Breakpoints are customizable widths that determine 
  how your responsive layout behaves across device or viewport sizes */
 /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 768px) {
+  .header .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 12px;
+    height: 110px;
+    gap: 5px;
+  }
+  .header .container div {
+    padding: 10px;
+  }
+  .header .container .flex-item-brand {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    cursor: pointer;
+  }
+  .header .container .flex-item-brand img {
+    width: 75px !important;
+    height: 75px !important;
+  }
+  .header .container .flex-item-brand span,
+  .header .container .flex-item-brand .brand {
+    display: none;
+  }
+  .header .container .flex-item-contact {
+    -webkit-box-flex: initial;
+        -ms-flex: initial;
+            flex: initial;
+  }
+  .header .container .flex-item-contact a .span,
+  .header .container .flex-item-contact .link .span {
+    display: none;
+  }
+  .header .container .flex-item-user {
+    -webkit-box-flex: initial;
+        -ms-flex: initial;
+            flex: initial;
+  }
+  .header .container .flex-item-user a .span,
+  .header .container .flex-item-user .user .span {
+    display: none;
+  }
+  .header .container .flex-item-cart {
+    -webkit-box-flex: initial;
+        -ms-flex: initial;
+            flex: initial;
+    cursor: pointer;
+  }
+  .header .container .flex-item-cart i,
+  .header .container .flex-item-cart .fa-shopping-cart {
+    font-size: 2em;
+    color: #ff6347;
+  }
+  .header .container .flex-item-cart span,
+  .header .container .flex-item-cart .cart {
+    display: none;
+  }
+  .navbar {
+    color: white;
+    background-color: #000;
+    border-radius: 10px;
+  }
+  .navbar .container {
+    padding: 16px;
+    height: 250px;
+    overflow: hidden;
+    background-color: whitesmoke;
+    position: relative;
+  }
+  .navbar .container #items {
+    display: none;
+  }
+  .navbar .container #items ul,
+  .navbar .container #items li {
+    display: block;
+    color: #0e1318;
+    font-size: 1.2em;
+    padding: 5px 5px;
+    font-weight: lighter;
+  }
+  .navbar .container #items ul:hover,
+  .navbar .container #items li:hover {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+  .navbar .container a {
+    text-decoration: none;
+    color: #0e1318;
+    padding: 14px 16px;
+    font-size: 16px;
+    display: block;
+  }
+  .navbar .container a,
+  .navbar .container .icon {
+    display: block;
+    font-size: 2em;
+    color: #ff6347;
+  }
+}
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 /* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .navbar .container a,
+  .navbar .container .icon {
+    display: none;
+  }
+}
+
 /* Large devices (laptops/desktops, 992px and up) */
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 * {
