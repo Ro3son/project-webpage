@@ -172,6 +172,41 @@
 /* Breakpoints are customizable widths that determine 
  how your responsive layout behaves across device or viewport sizes */
 /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .flex-item-contact {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  .flex-item-contact a .span,
+  .flex-item-contact .link .span {
+    font-size: 1em;
+    display: none;
+  }
+  .flex-item-user {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  .flex-item-user a .span,
+  .flex-item-user .user .span {
+    font-size: 1em;
+    display: none;
+  }
+  .flex-item-cart {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    cursor: pointer;
+  }
+  .flex-item-cart i,
+  .flex-item-cart .fa-shopping-cart {
+    font-size: 2em;
+    color: #ff6347;
+  }
+  .flex-item-cart span,
+  .flex-item-cart .cart {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .header .container {
     display: -webkit-box;
@@ -182,9 +217,9 @@
     gap: 5px;
   }
   .header .container .flex-item-brand {
-    -webkit-box-flex: initial;
-        -ms-flex: initial;
-            flex: initial;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     padding: 12px;
     cursor: pointer;
   }
@@ -197,33 +232,33 @@
     display: none;
   }
   .header .container .flex-item-contact {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    -webkit-box-flex: initial;
+        -ms-flex: initial;
+            flex: initial;
     -ms-flex-item-align: end;
         align-self: flex-end;
   }
   .header .container .flex-item-contact a .span,
   .header .container .flex-item-contact .link .span {
-    display: none;
+    font-size: 1em;
   }
   .header .container .flex-item-user {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    -webkit-box-flex: initial;
+        -ms-flex: initial;
+            flex: initial;
     -ms-flex-item-align: end;
         align-self: flex-end;
   }
   .header .container .flex-item-user a .span,
   .header .container .flex-item-user .user .span {
-    display: none;
+    font-size: 1em;
   }
   .header .container .flex-item-cart {
-    -ms-flex-item-align: end;
-        align-self: flex-end;
     -webkit-box-flex: initial;
         -ms-flex: initial;
             flex: initial;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
     cursor: pointer;
   }
   .header .container .flex-item-cart i,
@@ -331,6 +366,32 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 /* Extra large devices (large laptops and desktops, 1200px and up) */
+.section-content {
+  margin-top: 3rem !important;
+  margin-bottom: 3rem;
+  padding: 16px;
+  height: 400px;
+}
+
+.section-content .owl-carousel {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  font-weight: 300;
+  font-size: 2em;
+  line-height: 2.5;
+  z-index: 1;
+  width: 100%;
+  position: relative;
+}
+
+.section-content .owl-carousel img {
+  height: 40vh;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
