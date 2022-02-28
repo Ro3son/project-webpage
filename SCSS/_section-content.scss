@@ -1,1 +1,20 @@
-SCSS
+.section-content {
+  margin-top: 3rem !important;
+  margin-bottom: 3rem;
+  padding: 16px;
+  height: 400px;
+  .owl-carousel {
+    display: flex !important;
+    font-weight: 300;
+    font-size: 2em;
+    line-height: 2.5;
+    z-index: 1;
+    width: 100%;
+    position: relative;
+    img {
+      height: 40vh;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
