@@ -1,5 +1,4 @@
-// Join functions bars() and xMark()
-// To assign multiple handlers to one event, addEventlistener.
+// Navbar Toggler //
 
 bars.addEventListener("click", toggler);
 function toggler() {
@@ -12,5 +11,39 @@ function toggler() {
   var y = document.getElementById("xmark");
   y.classList.toggle("fa-xmark");
 }
-
 // Thanks to geeksforgeeks.org and javascript.info intro events.
+
+//Owl Carousel //
+$(".owl-carousel").owlCarousel({
+  loop: true,
+  autoplay: true,
+  autoplayHoverPause: true,
+  nav: true,
+  lazyLoad: true,
+  margin: 5,
+  padding: 5,
+  stagePadding: 5,
+  responsiveClass: true,
+  responsive: {
+    // breakpoint from 0 up
+    0: {
+      items: 1,
+      nav: true,
+    },
+    // breakpoint from 600 up
+    600: {
+      items: 2,
+      nav: false,
+    },
+    // breakpoint from 700 up
+    700: {
+      items: 2,
+      nav: false,
+    },
+    // breakpoint from 1200 up
+    1200: {
+      items: 3,
+      nav: false,
+    },
+  },
+});
