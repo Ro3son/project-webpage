@@ -2,6 +2,42 @@
  how your responsive layout behaves across device or viewport sizes */
 
 /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .flex-item-contact {
+    align-self: flex-end;
+    a,
+    .link {
+      .span {
+        font-size: 1em;
+        display: none;
+      }
+    }
+  }
+  .flex-item-user {
+    align-self: flex-end;
+    a,
+    .user {
+      .span {
+        font-size: 1em;
+        display: none;
+      }
+    }
+  }
+  .flex-item-cart {
+    align-self: flex-end;
+
+    cursor: pointer;
+    i,
+    .fa-shopping-cart {
+      font-size: 2em;
+      color: $colorff6;
+    }
+    span,
+    .cart {
+      display: none;
+    }
+  }
+}
 @media only screen and (max-width: 768px) {
   .header {
     .container {
@@ -10,7 +46,7 @@
       height: 110px;
       gap: 5px;
       .flex-item-brand {
-        flex: initial;
+        flex: 1;
         padding: 12px;
         cursor: pointer;
         img {
@@ -23,28 +59,28 @@
         }
       }
       .flex-item-contact {
-        flex: 1;
+        flex: initial;
         align-self: flex-end;
         a,
         .link {
           .span {
-            display: none;
+            font-size: 1em;
           }
         }
       }
       .flex-item-user {
-        flex: 1;
+        flex: initial;
         align-self: flex-end;
         a,
         .user {
           .span {
-            display: none;
+            font-size: 1em;
           }
         }
       }
       .flex-item-cart {
-        align-self: flex-end;
         flex: initial;
+        align-self: flex-end;
         cursor: pointer;
         i,
         .fa-shopping-cart {
