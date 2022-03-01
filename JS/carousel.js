@@ -14,6 +14,7 @@ $(".owl-carousel").owlCarousel({
     0: {
       items: 1,
       nav: true,
+      autoplay: false,
     },
     // breakpoint from 600 up
     600: {
