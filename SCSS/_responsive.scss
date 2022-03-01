@@ -38,6 +38,22 @@
     }
   }
 }
+.section-content {
+  .owl-carousel {
+    display: flex;
+    .owl-nav {
+      display: flex;
+      .owl-prev {
+        display: none;
+      }
+      .owl-next {
+        position: relative;
+        top: 1em;
+        color: $colorff6;
+      }
+    }
+  }
+}
 @media only screen and (max-width: 768px) {
   .header {
     .container {
