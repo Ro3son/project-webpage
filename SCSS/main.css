@@ -207,6 +207,28 @@
   }
 }
 
+.section-content .owl-carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section-content .owl-carousel .owl-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section-content .owl-carousel .owl-nav .owl-prev {
+  display: none;
+}
+
+.section-content .owl-carousel .owl-nav .owl-next {
+  position: relative;
+  top: 1em;
+  color: #ff6347;
+}
+
 @media only screen and (max-width: 768px) {
   .header .container {
     display: -webkit-box;
