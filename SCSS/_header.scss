@@ -80,6 +80,12 @@
           height: 35px;
           width: 50%;
         }
+        i {
+          cursor: pointer;
+          position: relative;
+          left: -2em;
+          color: $colorff6;
+        }
       }
     }
   }
