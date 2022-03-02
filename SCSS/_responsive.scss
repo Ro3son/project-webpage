@@ -38,7 +38,7 @@
     }
   }
 }
-.section-content {
+.slide-section {
   .owl-carousel {
     display: flex;
     .owl-nav {
@@ -170,6 +170,7 @@
         display: flex;
         font-size: 2em;
         color: $colorff6;
+        cursor: pointer;
       }
     }
   }
