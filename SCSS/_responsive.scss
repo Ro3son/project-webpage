@@ -3,6 +3,19 @@
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  .header {
+    .container-form {
+      .form-search {
+        form {
+          input,
+          .form-control {
+            font-size: 1em;
+            padding-left: 0.5em;
+          }
+        }
+      }
+    }
+  }
   .flex-item-contact {
     align-self: flex-end;
     a,
@@ -37,23 +50,24 @@
       display: none;
     }
   }
-}
-.slide-section {
-  .owl-carousel {
-    display: flex;
-    .owl-nav {
+  .slide-section {
+    .owl-carousel {
       display: flex;
-      .owl-prev {
-        display: none;
-      }
-      .owl-next {
-        position: relative;
-        top: 1em;
-        color: $colorff6;
+      .owl-nav {
+        display: flex;
+        .owl-prev {
+          display: none;
+        }
+        .owl-next {
+          position: relative;
+          top: 1em;
+          color: $colorff6;
+        }
       }
     }
   }
 }
+
 @media only screen and (max-width: 768px) {
   .header {
     .container {
@@ -142,7 +156,8 @@
       #items {
         display: none;
         ul,
-        li {
+        li,
+        .nav-link {
           display: flex;
           flex-direction: column;
           gap: 0.4em;
@@ -158,15 +173,7 @@
           }
         }
       }
-      a {
-        text-decoration: none;
-        color: $black0e;
-        padding: 14px 16px;
-        font-size: 16px;
-        display: flex;
-      }
-      a,
-      .icon {
+      #bars {
         display: flex;
         font-size: 2em;
         color: $colorff6;
@@ -182,8 +189,7 @@
 @media only screen and (min-width: 768px) {
   .navbar {
     .container {
-      a,
-      .icon {
+      #bars {
         display: none;
       }
     }
