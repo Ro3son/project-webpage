@@ -125,12 +125,15 @@
 .header .container-form .form-search form input {
   height: 35px;
   width: 50%;
+  font-size: 1.2em;
+  padding-left: 1em;
 }
 
 .header .container-form .form-search form i {
   cursor: pointer;
   position: relative;
-  left: -2em;
+  font-size: 1.5em;
+  left: -1.4em;
   color: #ff6347;
 }
 
@@ -163,14 +166,16 @@
   font-size: 2em;
 }
 
-.navbar .container ul li {
+.navbar .container ul li,
+.navbar .container ul .nav-link {
   cursor: pointer;
   color: #0e1318;
   font-weight: lighter;
   list-style-type: none;
 }
 
-.navbar .container ul li:hover {
+.navbar .container ul li:hover,
+.navbar .container ul .nav-link:hover {
   background-color: #2a2d2f;
   color: #ffffff;
   text-decoration: underline;
@@ -180,6 +185,11 @@
  how your responsive layout behaves across device or viewport sizes */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  .header .container-form .form-search form input,
+  .header .container-form .form-search form .form-control {
+    font-size: 1em;
+    padding-left: 0.5em;
+  }
   .flex-item-contact {
     -ms-flex-item-align: end;
         align-self: flex-end;
@@ -212,28 +222,24 @@
   .flex-item-cart .cart {
     display: none;
   }
-}
-
-.slide-section .owl-carousel {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.slide-section .owl-carousel .owl-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.slide-section .owl-carousel .owl-nav .owl-prev {
-  display: none;
-}
-
-.slide-section .owl-carousel .owl-nav .owl-next {
-  position: relative;
-  top: 1em;
-  color: #ff6347;
+  .slide-section .owl-carousel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .slide-section .owl-carousel .owl-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .slide-section .owl-carousel .owl-nav .owl-prev {
+    display: none;
+  }
+  .slide-section .owl-carousel .owl-nav .owl-next {
+    position: relative;
+    top: 1em;
+    color: #ff6347;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -344,7 +350,8 @@
     display: none;
   }
   .navbar .container #items ul,
-  .navbar .container #items li {
+  .navbar .container #items li,
+  .navbar .container #items .nav-link {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -361,21 +368,12 @@
     padding: 0;
   }
   .navbar .container #items ul:hover,
-  .navbar .container #items li:hover {
+  .navbar .container #items li:hover,
+  .navbar .container #items .nav-link:hover {
     color: #ffffff;
     text-decoration: underline;
   }
-  .navbar .container a {
-    text-decoration: none;
-    color: #0e1318;
-    padding: 14px 16px;
-    font-size: 16px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .navbar .container a,
-  .navbar .container .icon {
+  .navbar .container #bars {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -388,8 +386,7 @@
 /* Small devices (portrait tablets and large phones, 600px and up) */
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  .navbar .container a,
-  .navbar .container .icon {
+  .navbar .container #bars {
     display: none;
   }
 }
