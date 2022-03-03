@@ -13,7 +13,8 @@
       padding: 0;
       gap: 14px;
       font-size: 2em;
-      li {
+      li,
+      .nav-link {
         cursor: pointer;
         color: $black0e;
         font-weight: lighter;
