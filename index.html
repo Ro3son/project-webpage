@@ -3,12 +3,14 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" /><!-- Setting the viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Setting the viewport -->
   <title>BIKE ESPORTE</title>
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png" />
   <link rel="stylesheet" href="SCSS/main.css" />
   <link rel="stylesheet" href="owlcarousel/css/owl.carousel.min.css" />
-  <link rel="stylesheet" href="owlcarousel/css/owl.theme.default.min.css" />
+  <link rel="stylesheet" href="owlcarousel/css/owl.theme.default.min.css" />7
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css' rel='stylesheet' />
   <script src="https://kit.fontawesome.com/efda80027a.js" crossorigin="anonymous"></script>
 </head>
 
@@ -50,11 +52,21 @@
     <div class="container">
       <div id="items">
         <ul>
-          <li class="item-one">BIKES</li>
-          <li class="item-two">COMPONENTES</li>
-          <li class="item-three">ADULTOS</li>
-          <li class="item-four">CRIANÇAS</li>
-          <li class="item-five">ACESSÓRIOS</li>
+          <li class="item-one">
+            <a class="nav-link" href="#">BIKES</a>
+          </li>
+          <li class="item-two">
+            <a class="nav-link" href="#">COMPONENTES</a>
+          </li>
+          <li class="item-three">
+            <a class="nav-link" href="#">ADULTOS</a>
+          </li>
+          <li class="item-four">
+            <a class="nav-link" href="#">CRIANÇAS</a>
+          </li>
+          <li class="item-five">
+            <a class="nav-link" href="#">ACESSÓRIOS</a>
+          </li>
         </ul>
       </div>
       <a title="MENU" class="icon" id="bars">
@@ -64,31 +76,157 @@
   </nav>
 
   <section class="slide-section">
-    <h1>Lançamentos</h1>
     <div class="owl-carousel">
       <div>
-        Bike 1
+        <!-- Bike 1 -->
         <img src="img/howard-bouchevereau-BRDO4C-0h_s-unsplash.jpg" alt="" />
       </div>
       <div>
-        Bike 2 <img src="img/mikkel-bech-yjAFnkLtKY0-unsplash.jpg" alt="" />
+        <!-- Bike 2  -->
+        <img src="img/mikkel-bech-yjAFnkLtKY0-unsplash.jpg" alt="" />
       </div>
       <div>
-        Bike 3 <img src="img/rizki-yulian-ZBM9h6Es6IA-unsplash.jpg" alt="" />
+        <!-- Bike 3  -->
+        <img src="img/rizki-yulian-ZBM9h6Es6IA-unsplash.jpg" alt="" />
       </div>
       <div>
-        Bike 4 <img src="img/robert-bye-tG36rvCeqng-unsplash.jpg" alt="" />
+        <!-- Bike 4  -->
+        <img src="img/robert-bye-tG36rvCeqng-unsplash.jpg" alt="" />
       </div>
       <div>
-        Bike 5 <img src="img/tiffany-nutt-0ClfreiNppM-unsplash.jpg" alt="" />
+        <!-- Bike 5  -->
+        <img src="img/tiffany-nutt-0ClfreiNppM-unsplash.jpg" alt="" />
       </div>
     </div>
   </section>
 
-  <section class="contact-section"></section>
+  <main class="main">
+    <section class="products">
+      <h1>Produtos</h1>
+      <div class="container-products">
+        <ul>
+          <li class="item">
+            <div class="image">
+              <img src="" alt="">
+              <span>MTB</span>
+            </div>
+            <div class="price">
+              <p class="price">
+                <span>R$ 1.000,00</span>
+              </p>
+            </div>
+            <div class="btn">
+              <button class="button" type="button">Comprar</button>
+            </div>
+          </li>
+          <li class="item">
+            <div class="image">
+              <img src="" alt="">
+              <span>URBAN</span>
+            </div>
+            <div class="price">
+              <p class="price">
+                <span>R$ 2.500,00</span>
+              </p>
+            </div>
+            <div class="btn">
+              <button class="button" type="button">Comprar</button>
+            </div>
+          </li>
+          <li class="item">
+            <div class="image">
+              <img src="" alt="">
+              <span>SPEED</span>
+            </div>
+            <div class="price">
+              <p class="price">
+                <span>R$ 3.000,00</span>
+              </p>
+            </div>
+            <div class="btn">
+              <button class="button" type="button">Comprar</button>
+            </div>
+          </li>
+          <li class="item">
+            <div class="image">
+              <img src="" alt="">
+              <span>MTB</span>
+            </div>
+            <div class="price">
+              <p class="price">
+                <span>R$ 3.000,00</span>
+              </p>
+            </div>
+            <div class="btn">
+              <button class="button" type="button">Comprar</button>
+            </div>
+          </li>
+          <li class="item">
+            <div class="image">
+              <img src="" alt="">
+              <span>URBAN</span>
+            </div>
+            <div class="price">
+              <p class="price">
+                <span>R$ 3.200,00</span>
+              </p>
+            </div>
+            <div class="btn">
+              <button class="button" type="button">Comprar</button>
+            </div>
+          </li>
+          <li class="item">
+            <div class="image">
+              <img src="" alt="">
+              <span>SPEED</span>
+            </div>
+            <div class="price">
+              <p class="price">
+                <span>R$ 4.000,00</span>
+              </p>
+            </div>
+            <div class="btn">
+              <button class="button" type="button">Comprar</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
 
-  <footer class="footer"></footer>
+  <footer class="footer">
+    <div class="contact">
+      <h2><span>Atendimento</span></h2>
+      <p><i class="fa-solid fa-envelope"></i>atendimento@bikeesporte.com</p>
+      <p><i class="fa-solid fa-square-phone"></i>(xx) xxxx-xxxx</p>
+      <p><i class="fa-brands fa-whatsapp"></i>(xx) xxxx-xxxx</p>
+    </div>
+    <div>
+      <h2><span>Ajuda e Suporte</span></h2>
+      <ul>
+        <li>Meus Pedidos</li>
+        <li>Trocas e Devoluções</li>
+        <li>Formas de Pagamento</li>
+        <li>Privacidade</li>
+        <li>Frete</li>
+      </ul>
+    </div>
+    <div>
+      <div id="map" style="width: 400px; height: 300px;">
+      </div>
+    </div>
+  </footer>
 
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js'></script>
+  <script>
+    mapboxgl.accessToken = "pk.eyJ1Ijoicm8zc29uIiwiYSI6ImNremloMGdxNTBkdDYydW55MTZxM3p3dTAifQ._J8V4-c_EnOFnZmVKqS8_w";
+    const map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/ro3son/cl0b3w67i000314utqaxbzapa',
+      center: [-27.5, -48],
+      zoom: 15
+    });
+  </script>
   <script src="jquery/jquery.js"></script>
   <script src="owlcarousel/js/owl.carousel.min.js"></script>
   <script src="JS/toggler.js"></script>
