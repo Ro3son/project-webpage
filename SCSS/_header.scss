@@ -79,11 +79,14 @@
         input {
           height: 35px;
           width: 50%;
+          font-size: 1.2em;
+          padding-left: 1em;
         }
         i {
           cursor: pointer;
           position: relative;
-          left: -2em;
+          font-size: 1.5em;
+          left: -1.4em;
           color: $colorff6;
         }
       }
