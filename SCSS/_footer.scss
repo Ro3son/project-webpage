@@ -1,0 +1,41 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  height: 600px;
+  gap: 2em;
+  .contact {
+    padding: 10px;
+    cursor: pointer;
+    h2 {
+      font-size: 1.8em;
+      padding-bottom: 0.8em;
+    }
+    p {
+      font-size: 1.6em;
+      padding-bottom: 0.8em;
+      i {
+        padding-right: 0.4em;
+      }
+    }
+  }
+  .info {
+    padding: 10px;
+    h2 {
+      font-size: 1.8em;
+      padding-bottom: 0.8em;
+    }
+    ul {
+      list-style-type: none;
+      font-size: 1.6em;
+      li {
+        cursor: pointer;
+        padding-bottom: 0.18em;
+        &:hover {
+          text-decoration: underline $colorff6;
+        }
+      }
+    }
+  }
+}
