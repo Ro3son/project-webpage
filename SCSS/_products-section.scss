@@ -1,10 +1,11 @@
 main {
-  height: 400px;
+  height: 500px;
   width: 100%;
   padding: 16px;
+  margin: 0 auto;
   background-color: whitesmoke;
   section {
-    height: 350px;
+    height: 500px;
     width: 100%;
     padding: 16px;
     h1 {
@@ -18,19 +19,28 @@ main {
       justify-content: center;
       align-items: center;
       padding: 16px;
-      height: 250px;
+      height: 400px;
+      gap: 8px;
       ul {
         display: flex;
         margin: 0;
-        padding: 0;
+        padding: 16px;
         gap: 2em;
         li,
         .item {
           cursor: pointer;
+
           list-style-type: none;
           border: 2px solid $colorff6;
-          img {
-            padding-bottom: 1em;
+          .image {
+            img {
+              transition: 2s all;
+              padding-bottom: 1em;
+              &:hover {
+                transform: (2);
+                padding: 3px;
+              }
+            }
           }
           .price {
             padding-bottom: 1em;
