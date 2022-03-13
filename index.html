@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="SCSS/main.css" />
   <link rel="stylesheet" href="owlcarousel/css/owl.carousel.min.css" />
   <link rel="stylesheet" href="owlcarousel/css/owl.theme.default.min.css" />
-  <link href='https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css' rel='stylesheet' />
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css" rel="stylesheet" />
   <script src="https://kit.fontawesome.com/efda80027a.js" crossorigin="anonymous"></script>
 </head>
 
@@ -101,63 +101,45 @@
   </section>
 
   <main class="main">
-    <section class="products-section">
-      <h1>Bikes</h1>
-      <div class="container-products">
-        <ul>
-          <li class="item">
-            <div class="image">
-              <img src="img/howard-bouchevereau-BRDO4C-0h_s-unsplash.jpg" width="270" alt="bicicleta">
-            </div>
-            <div class="price">
-              <p class="price">
-                <span>R$ 1.000,00</span>
-              </p>
-            </div>
-            <div class="btn">
-              <button class="button" type="button">Comprar</button>
-            </div>
-          </li>
-          <li class="item">
-            <div class="image">
-              <img src="img/rizki-yulian-ZBM9h6Es6IA-unsplash.jpg" width="270" alt="bicicleta">
-            </div>
-            <div class="price">
-              <p class="price">
-                <span>R$ 2.000,00</span>
-              </p>
-            </div>
-            <div class="btn">
-              <button class="button" type="button">Comprar</button>
-            </div>
-          </li>
-          <li class="item">
-            <div class="image">
-              <img src="img/mikkel-bech-yjAFnkLtKY0-unsplash.jpg" width="270" alt="bicicleta">
-            </div>
-            <div class="price">
-              <p class="price">
-                <span>R$ 3.000,00</span>
-              </p>
-            </div>
-            <div class="btn">
-              <button class="button" type="button">Comprar</button>
-            </div>
-          </li>
-          <li class="item">
-            <div class="image">
-              <img src="img/tiffany-nutt-0ClfreiNppM-unsplash.jpg" width="270" alt="bicicleta">
-            </div>
-            <div class="price">
-              <p class="price">
-                <span>R$ 4.000,00</span>
-              </p>
-            </div>
-            <div class="btn">
-              <button class="button" type="button">Comprar</button>
-            </div>
-          </li>
-        </ul>
+    <section class="section">
+      <h1>Bicicletas</h1>
+      <div class="flex-container">
+        <div class="img">
+          <img class="flex-item" src="img/howard-bouchevereau-BRDO4C-0h_s-unsplash.jpg" alt="" />
+          <div class="price">
+            <span>$ 1200</span>
+          </div>
+          <div class="btn">
+            <button>Comprar</button>
+          </div>
+        </div>
+        <div class="img">
+          <img class="flex-item" src="img/mikkel-bech-yjAFnkLtKY0-unsplash.jpg" alt="" />
+          <div class="price">
+            <span>$ 2000</span>
+          </div>
+          <div class="btn">
+            <button>Comprar</button>
+          </div>
+        </div>
+        <div class="img">
+          <img class="flex-item" src="img/rizki-yulian-ZBM9h6Es6IA-unsplash.jpg" alt="" />
+          <div class="price">
+            <span>$ 3000</span>
+          </div>
+          <div class="btn">
+            <button>Comprar</button>
+          </div>
+        </div>
+        <div class="img">
+          <img class="flex-item" src="img/tiffany-nutt-0ClfreiNppM-unsplash.jpg" alt="" />
+          <div class="price">
+            <span>$ 4000</span>
+          </div>
+          <div class="btn">
+            <button>Comprar</button>
+          </div>
+        </div>
       </div>
     </section>
   </main>
@@ -180,19 +162,19 @@
       </ul>
     </div>
     <div class="mapbox">
-      <div id="map" style="width: 300px; height: 200px;">
-      </div>
+      <div id="map" style="width: 300px; height: 200px"></div>
     </div>
   </footer>
 
-  <script src='https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js'></script>
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js"></script>
   <script>
-    mapboxgl.accessToken = "pk.eyJ1Ijoicm8zc29uIiwiYSI6ImNremloMGdxNTBkdDYydW55MTZxM3p3dTAifQ._J8V4-c_EnOFnZmVKqS8_w";
+    mapboxgl.accessToken =
+      "pk.eyJ1Ijoicm8zc29uIiwiYSI6ImNremloMGdxNTBkdDYydW55MTZxM3p3dTAifQ._J8V4-c_EnOFnZmVKqS8_w";
     const map = new mapboxgl.Map({
-      container: 'map',
-      style: 'mapbox://styles/ro3son/cl0b3w67i000314utqaxbzapa',
+      container: "map",
+      style: "mapbox://styles/ro3son/cl0b3w67i000314utqaxbzapa",
       center: [-27.5, -48],
-      zoom: 15
+      zoom: 15,
     });
   </script>
   <script src="jquery/jquery.js"></script>
